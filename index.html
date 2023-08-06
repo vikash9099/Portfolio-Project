@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background: linear-gradient(135deg,#153677,#4e085f);;
+            color: #fff;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            height: 100px;
+            background-color: rgb(77, 95, 234);
+            color: black;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav li{
+            list-style:none;
+            margin: 0 25px;
+        }
+        nav li a{
+           text-decoration: none;
+           color:black;
+        }
+        nav li a:hover{
+           color:aqua;
+           font-size: 1.1rem;
+        } 
+        .left{
+            font-size: 3rem;        }
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px 0;
+         }   
+         .first-section > div{
+            width: 30%;
+         }
+         .leftsection{
+          
+            font-size: 3rem;
+            
+         }
+         .rightsection img{
+            width: 80%;
+            
+         }
+         .aqua{
+            color: aqua;
+         }
+         #element{
+            color: aqua;
+         }
+         .second-section{
+            max-width: 80vw;
+            margin: auto;
+         }
+         .second-section .title h1{
+           font-size: 2rem;
+           margin-left: 6rem;
+         }
+         .second-section h3{
+            margin-top: 50px;
+            margin-left: 6rem;
+         }
+
+         main hr{
+            border: 0;
+            background-color: aqua;
+            height: 1.2px;
+            margin: 40px 80px;
+         }
+        
+         .textaqua{
+            color: rgb(16, 173, 240);
+            margin-left: 6rem;
+         }
+         .second-section .box{
+            /* background-color: black; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 50px;
+            height: 50rem;
+            width: 70vw;
+            border-radius: 50px;
+            
+         }
+         .second-section .box > div{
+            width: 30%;
+         }
+         .left img{
+            width: 90%;
+            
+            
+
+         }
+         .box .right h1{
+            color: #fff;
+            font-size: 3rem;
+            
+         }
+         .box .right h3{
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 30px 0;
+         }
+         button{
+            background-color: aqua;
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            transition: 0.5s;
+            border-radius: 30px;
+            margin: 2rem 0;
+         }
+         button:hover{
+            background-color: transparent;
+            border: 2px solid aqua;
+            cursor: pointer;
+         }
+         .services{
+            background-color: black;
+            width: 100%;
+            padding: 100px 0;
+         }
+         .title h2{
+            font-size: 75px;
+            text-align: center;
+            width:1350px ;
+            margin: 30px auto;
+         }
+         .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+         }
+         .card{
+            height: 365px;
+            width: 335px;
+            padding: 20px 30px;
+            /* background-color: black; */
+            box-sizing: 20px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 30px;
+            border-color:black;
+         }
+         .card i{
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            margin: 25px 0;
+            color: aqua;
+         }
+         h5{
+            font-size: 23px;
+            margin-bottom: 15px;
+         }
+         .pra p{
+            font-size: 18px;
+            line-height: 27px;
+            margin: 25px;
+            color: aqua;
+         }
+         .card .button{
+            background-color: aqua;
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 9px 22px;
+            transition: 0.5s;
+            border-radius: 30px;
+            margin: 2rem 0;
+         }
+         .card .button:hover{
+            background-color: transparent;
+            border: 2px solid aqua;
+            cursor: pointer;
+         }
+         .contact-me{
+            height: 290px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            /* background-color: black; */
+         }
+         .contact-me p{
+            font-size: 40px;
+            font-weight:  bold;
+            margin: 25px;
+         }
+        .contact-me .button-two{
+            background-color: aqua;
+            color: black;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            transition: 0.5s;
+            border-radius: 30px;
+            margin: 2rem 0;
+        }
+        .contact-me .button-two:hover{
+            background-color: transparent;
+            border: 2px solid aqua;
+            cursor: pointer;
+        }
+        footer p{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        footer p{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 25px;
+        }
+        .social{
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            height: 100px;
+            padding: 10px 30rem
+
+        }
+        .social-icons{
+            list-style:none;
+            margin: 0 10px;
+            justify-content:center;
+            list-style:none;
+            border-radius: 5px;
+            background-color: aqua;
+        }
+        .social-icons a{
+            text-decoration: none;
+           color:transparent;
+           transition: 1s;
+        }
+        .social-icons a:hover{
+            color:transparent;
+           font-size: 1.1rem;
+           cursor: pointer;
+        }
+        footer{
+            /* background-color: black; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">home</a></li>
+                    <li><a href="/">contact</a></li>
+                    <li><a href="/">intro</a></li>
+                    <li><a href="/">about</a></li>
+                    <li><a href="/">service</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+        <div class="leftsection">Hello Its Me 
+            <div><span class="aqua">Vikash Fagna</span></div>
+                <span id="element"></span>
+        </div>
+        <div class="rightsection">
+            <img src="/—Pngtree—web development illustration modern can_4484301.png" alt="">
+        </div>
+        </section>
+        <hr>
+        <section class="second-section">
+            <span class="textaqua">what i have done soo far</span>
+            <div class="title"><h1>Past Exprience</h1></div>
+            <div class="box">
+            <div class="right">
+                <h1>About Me</h1>
+                <h3>Developer And Design</h3>
+                <p>My proficiency extends beyond the basics, as I have delved into various modern frameworks and libraries like React, Angular, and Vue.js, leveraging their capabilities to build dynamic and interactive user interfaces. Through continuous learning and staying up-to-date with the latest industry trends, I strive to optimize performance, enhance accessibility, and provide exceptional user experiences across different devices and browsers.</p>
+                <button type="button">lets talk</button>
+            </div>
+            <div class="left">
+                <img src="./pngwing.com.png" alt="">
+            </div>
+            
+            </div>
+            <!-- <h2>1.fronted developer</h2> -->
+        </section>
+        <!-- ----third section--- -->
+        <div class="sevices">
+            <div class="title">
+                <h2>our services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-regular fa-user"></i>
+                    <h5>web development</h5>
+                    <div class="pra">
+                    <p>every website should be built with two primary goal: firstly, it needs to work in all devices
+                        and secondly, it need to be fast
+                    </p>
+                    <P style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </P>
+                    </div>
+                </div>
+                 
+                <div class="card">
+                    <i class="fa-solid fa-user"></i>
+                    <h5>web development</h5>
+                    <div class="pra">
+                    <p>every website should be built with two primary goal: firstly, it needs to work in all devices
+                        and secondly, it need to be fast
+                    </p>
+                    <P style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </P>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>web development</h5>
+                    <div class="pra">
+                    <p>every website should be built with two primary goal: firstly, it needs to work in all devices
+                        and secondly, it need to be fast
+                    </p>
+                    <P style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </P>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </section>
+        <!-- -------contact section---- -->
+        <div class="contact-me">
+            <P>Let Me Get You A Beautiful Website</P>
+            <a class="button-two" href="#"> Hire Me</a>
+        </div>
+        <!-- -----footer start-------->
+        <footer>
+            <p>Vikash Fagna</p>
+            <p>For More Html Css Website - Please Click On The Link Given Below To My Social Media Platfrom:</p>
+            <div class="social">
+                <a class="social-icons" href="https://www.instagram.com/the_vikashfagna9909/">
+                    <img src="./bxl-instagram.svg" alt="instagram"></a>
+                    <a class="social-icons" href="https://www.linkedin.com/in/vikash-fagna-244996244/">
+                <img src="./bxl-linkedin.svg" alt="linkedin"></a>
+                <a class="social-icons" href="https://www.facebook.com/">
+                <img src="./bxl-meta.svg" alt="facebook"></a>
+                <a class="social-icons" href=https://twitter.com/i/flow/login?redirect_after_login=%2Flogin>
+                <img src="./bxl-twitter.svg" alt="twitter"></a>
+            </div>
+            <p>Copyright By Vikash Fagna</p>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['i am a web developer', ' and web designer'],
+          typeSpeed: 50,
+        });
+      </script>
+    
+</body>
+</html>
